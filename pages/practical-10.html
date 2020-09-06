@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/practical-10.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Side-bar</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #2f3640;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    line-height: 70px;
+
+}
+.header img{
+width: 90px;
+height: 50px;
+margin-right:20px;
+border-radius: 5px 30px 30px 5px;
+}
+.header img:hover{
+   position: relative;
+   left:15px;
+   opacity: 0.5;
+}
+.header h1{
+    line-height: 70px;
+    color:white;
+}
+
+.contents{
+    width:100%;
+    margin-top:40px;
+    transition: 0.5s;
+  
+    
+}
+.contents img{
+    display: block;
+    width:50%;   
+    margin: 0 auto;
+    margin-top:30px;
+    border-radius: 15px;
+}
+.contents p{
+    margin:20px;
+    text-align: justify;
+}
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top:70px;
+    background-color: #353b48;
+    left:-100%;
+    transition:0.7s;
+}
+.sidebar ul{
+    list-style: none;
+
+}
+.sidebar ul li{
+    border-bottom: 2px solid rgba(255, 255, 255,0.1);  
+}
+.sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding:15px 25px;
+    transition:0.4s;
+}
+a i{
+    margin-right: 20px;
+}
+.sidebar ul li a:hover{
+    border-left:10px solid white;
+}
+.social{
+    margin-top:200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding:15px 25px;
+
+}
+i {
+    color:white;
+    font-size: 30px;
+}
+.show-btn, .hide-btn {
+    font-size:35px;
+    color: white;
+    position: fixed;
+    top:20px;
+    left:15px;
+}
+.hide-btn{
+    opacity: 0;
+}
+
+#chk:checked ~ .sidebar{
+    left:0;
+}
+#chk:checked ~ .show-btn{
+   opacity:0;
+}
+#chk:checked ~ .hide-btn{
+   opacity:1;
+}
+#chk:checked ~ .contents{
+   position: fixed;
+   right: 0;
+   width: 80%;
+}
+
+
+@media (max-width: 768px){
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+    .header h1{
+        display: none;
+    }
+
+} 
+    </style>
+</head>
+<body>
+  <div class="header">
+<img src="../images/HTML.jpg" alt="">
+<h1>OPPORTUNITY</h1>
+  </div>  
+ 
+  <input type="checkbox" name=" " id="chk" style="display: none;">
+  <label for="chk" class="show-btn">
+      <i class="fa fa-bars">M</i>
+  </label>
+  <label for="chk" class="hide-btn">
+    <i class="fa fa-times">L</i>
+      </label>
+      <div class="contents">
+     <img src="../images/nature1.jpg" alt="">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sunt recusandae magni sapiente nulla! Blanditiis eligendi sunt magni autem reprehenderit molestiae numquam, provident voluptas voluptatibus rerum, distinctio porro voluptate? Blanditiis ratione, incidunt laboriosam temporibus, molestiae eum aliquam suscipit deleniti quod placeat rem vel repellendus, nisi repudiandae eius nihil odit? Molestias ipsa nisi consequuntur eaque alias ut dolore dolor quisquam aliquam deserunt ad quis consectetur earum, incidunt accusamus iste voluptatem tempora minus autem iure officia quibusdam. Sed expedita veniam, nesciunt ab voluptate officiis tenetur suscipit velit, et aut natus consectetur dicta ratione veritatis id labore nostrum quis, ducimus quisquam. Illum minus corporis ducimus ab, id error mollitia laborum nisi consequatur molestiae nulla aut aperiam in aliquid esse. Reiciendis autem aliquam tempora. Iusto consequuntur cum mollitia facilis aut fugit voluptatibus error aperiam! Libero voluptate nulla nostrum facilis ea quo inventore fugit aliquid? Accusantium ratione necessitatibus nam mollitia blanditiis iure laudantium, libero alias vero dignissimos reiciendis! Repudiandae, nisi quaerat placeat a temporibus, officiis molestiae enim accusantium culpa perferendis repellendus autem. Quisquam possimus facilis magni deserunt id, quidem dolorum tempora fugit ipsa fuga, repellat molestias quasi cum nulla adipisci pariatur! Exercitationem distinctio dicta modi molestias repellat doloremque, consequatur non, libero magnam, quas quaerat pariatur dolore minima error eos ad reprehenderit architecto perspiciatis quos laudantium sapiente deleniti culpa. Atque temporibus dolores ut voluptate quis? Itaque at rem, cum illo pariatur et praesentium a, dolores illum eum laudantium veniam? Perferendis id dolore saepe facere accusamus cum hic architecto repellendus illum, amet voluptate numquam, quaerat soluta veniam esse animi, eius corporis aliquam quae minima labore impedit velit alias. In, deserunt fuga! Rerum accusantium, architecto, sapiente totam consectetur, accusamus impedit doloribus officiis temporibus provident iste? Perspiciatis totam tempora officia, non, ea culpa, accusantium suscipit facilis beatae odio eos nostrum porro mollitia laborum amet sit consequuntur! Reprehenderit, assumenda odio!
+
+     </p>
+ 
+    </div>
+  <div class="sidebar">
+      <ul>
+          <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+          <li><a href="#"><i class="fa fa-user"></i><span>about</span></a></li>
+          <li><a href="#"><i class="fa fa-tasks"></i><span>services</span></a></li>
+          <li><a href="#"><i class="fa fa-rss"></i><span>blog</span></a></li>
+          <li><a href="#"><i class="fa fa-id-card"></i><span>contact</span></a></li>
+      </ul>
+      <div class="social">
+          <a href=""><i class="fa fa-facebook-square"></i></a>
+          <a href=""><i class="fa fa-youtube-square"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+      </div>
+  </div>
+</body>
+</html>

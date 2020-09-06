@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Practical-12</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(23, 230, 230);
+        }
+    .container{
+        opacity: 0.9;
+        width:70%;
+margin:50px auto;
+padding: 20px 20px 40px 20px;
+background-color: rgb(56, 54, 54);
+min-width: 700px;
+    }
+  .container table,td,tr,th{
+        border-collapse: collapse;
+    }
+   .container table{
+        width: 95%;
+        margin:0 auto;
+    }
+    tbody tr:nth-child(odd){
+        background-color: rgb(212, 206, 195);
+    }
+    th{
+        padding: 10px;   
+    }
+    tbody td{
+        padding: 10px;
+    }
+    tr,td,th{
+        border-right: 2px solid white;
+        text-align: center;
+    }
+    tr{
+        border-right: hidden;
+    }
+    caption{
+        height: 60px;
+        font-size: 30px;
+        padding: 10px 0 10px 0;
+        color: whitesmoke;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color:rgba(16, 33, 187,0.5);
+        margin-bottom: 10px;
+       
+       
+    }
+    th{
+        font-size: 40px; 
+        color:blueviolet ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+        background-color: blueviolet;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .fa-check{
+color:green;
+font-size: 20px;
+    }
+    .fa-times{
+color:red;
+font-size: 20px;
+    }
+    .fa-life-ring{
+        margin-right: 20px;
+    }
+    .fa-superpowers{
+        margin-right: 20px;
+    }
+    .fa-telegram{
+        margin-right: 20px;
+    }
+    .fa-bolt{
+        margin-right: 20px;
+    }
+    a:hover{
+        background-color: rgb(128, 19, 0);
+        border:5px solid orangered;
+       
+    }
+ 
+</style>
+</head>
+<body>
+   <div class="container">
+       
+       <table>
+        <caption>
+            SELECT YOUR PLAN
+        </caption>
+        <colgroup>
+        <col colspan="1" style="background-color: rgb(65, 209, 142);">
+        <col colspan="2" style="background-color: rgb(107, 186, 214)">
+        <col colspan="3" style="background-color: rgb(206, 111, 148)">
+        <col colspan="4" style="background-color: rgb(209, 172, 49)">
+        </colgroup>
+        <tr>
+            <thead>
+            <th width=25%><i class="fa fa-life-ring" aria-hidden="true"></i></i>Basic</th>
+            <th width=25%><i class="fa fa-superpowers" aria-hidden="true"></i>Plus</th>
+            <th width=25%><i class="fa fa-telegram" aria-hidden="true"></i>Deluxe</th>
+            <th width=25%><i class="fa fa-bolt" aria-hidden="true"></i>Pro</th>
+            </thead>
+        </tr>
+        <tbody>
+        <tr>
+                <td style="color: green;font-size: 20px;text-align: center;">Rs. 500/-</td>
+                <td style="color: green;font-size: 20px;text-align: center;">Rs. 1500/-</td>
+                <td style="color: green;font-size: 20px;text-align: center;">Rs. 2500/-</td>
+                <td style="color: green;font-size: 20px;text-align: center;">Rs. 3500/-</td>
+        </tr>
+        <tr>
+           <td>50 pages </td>
+           <td>75 pages </td>
+           <td>unlimited </td>
+           <td>Unlimited </td>
+        </tr>
+        <tr>
+            <td>3 Users </td>
+            <td>5 Users </td>
+            <td>10 Users </td>
+            <td>Unlimited </td>
+         </tr>
+         <tr>
+            <td>10 Sites </td>
+            <td>25 Sites </td>
+            <td>100 Sites </td>
+            <td>Unlimited </td>
+         </tr>
+         <tr>
+            <td>50 MB </td>
+            <td>250 MB </td>
+            <td>1 GB </td>
+            <td>5 GB </td>
+         </tr>
+         <tr>
+            <td>included </td>
+            <td>included </td>
+            <td>included </td>
+            <td>included </td>
+         </tr>
+         <tr>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+         </tr>
+         <tr>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+         </tr>
+         <tr>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+         </tr>
+         <tr>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-check"></i></td>
+         </tr>
+         <tr>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check"></i></td>
+         </tr>
+         <tr>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign UP</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+         </tr>
+
+    </tbody>
+       
+       </table>
+   </div> 
+</body>
+</html>
