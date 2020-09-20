@@ -375,11 +375,11 @@ hr{
     .sec-3 ul li{
         display: inline-block;
         padding: 20px;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
       border-radius: 50%;
         background-color: rgb(24, 69, 75);
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .sec-3 ul li i{
         color:white;
