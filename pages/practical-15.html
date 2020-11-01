@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(rgb(0, 119, 255),rgb(36, 196, 21));
+            height: 90vh;
+        }
+        .container{
+            margin:100px auto;
+            width: 400px;
+            height: 50px;
+
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+
+        }
+        #minus{
+            height:50px;
+            width:50px;
+          background-color: rgb(255, 0, 64);
+            padding: 10px;
+
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            margin:0 20px 0 0;
+            font-size: 30px;
+            color:white;
+            transition: 0.4s;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #plus{
+            height:50px ;
+            width:50px;
+            background-image: linear-gradient(rgb(72, 255, 0),rgb(0, 255, 170));
+            padding: 10px;
+
+            margin:0 0 0 20px;
+            font-size: 30px;
+            color:white;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            transition: 0.4s;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #result{
+            height:50px ;
+            width:50px;
+            background-image: linear-gradient(rgb(0, 225, 255),rgb(85, 156, 27));
+            padding: 10px;
+
+            margin:0 20px 0 20px;
+            font-size: 30px;
+            color:white;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        #plus:hover,#minus:hover{
+transform: scale(0.9);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: goldenrod;margin-top: 100px;"> Counter</h1>
+    <div class="container">
+    <div id="minus" onclick="minus()">-</div>
+    <div id="result">0</div>
+    <div id="plus" onclick="plus()">+</div>
+</div>
+
+<script>
+//for plus counter
+function plus(){
+    var y=document.getElementById("result");
+
+var z=parseInt(y.innerText);
+z=z+1;
+y.innerHTML=z;
+if(z>0){
+    var x=document.getElementById("minus");
+    x.style.backgroundImage="linear-gradient(red,green)";
+x.style.backgroundColor="none"; 
+}
+
+
+}
+
+//for minus counter
+function minus(){
+var y=document.getElementById("result");
+var z=parseInt(y.innerText);
+z=z-1;
+if(z!=-1){
+    y.innerHTML=z;
+}
+if(z==0)
+{
+    var x=document.getElementById("minus");
+x.style.backgroundImage="none";
+x.style.backgroundColor="yellow";
+}
+}
+</script>
+</body>
+</html> 
